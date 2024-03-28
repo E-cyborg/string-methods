@@ -12,10 +12,10 @@ string="KINSHUK"
 print(string.lower())
 
 #rstrip method
-#this method remove any trailing character.
+#this method remove any trailing character in the last of string.
 #this will not strip the starting characters
-string1="1111kinshuk11111"
-print(string1.rstrip("1"))
+string1="1111kinshuk22222"
+print(string1.lstrip("1"))
 
 
 #replace method
@@ -25,8 +25,8 @@ print(sr.replace("n","ia"))
 
 
 #split method
-strin="hello world"
-print(strin.split(" "))
+strin="hello-world-kinshuk-aamir"
+print(strin.split("-"))
 
 #capitalize method
 #turn only the first character into upper case and the rest into lower case
@@ -38,12 +38,12 @@ print(st.capitalize())
 #aligns the string to the center as per the parameter given by the user.
 # print(len(ste1))
 ste1="hello kinshuk"
-print(ste1.center(200))
+print(ste1.center(9))
 
 #count method
 #returns a number of times given value occurred in string
-sy="ababababababbcbcbschaakvddvsc"
-print(sy.count("ab"))
+sy="999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+print(sy.count("9"))
 
 
 #endswith method
@@ -55,10 +55,10 @@ print(str1.endswith("come",3,7))
 
 
 #find method
-#searches for the first occurence of the given vale and return index number.
-#find and index are same method but if the vale is not in the string index raises a ValueError for lists.
+#searches for the first occurence of the given vale an-d return index number.
+#find and index are same method but if the vale is not in the string index raises a ValueError.
 srt1="hello i am kinshuk in diploma ftd ce student"
-print(srt1.find("i am "))
+print(srt1.find("z"))
 print(srt1.index("i"))
 
 
@@ -77,14 +77,14 @@ print(str2.isalpha())
 #check if the entire string is in lower case
 # same with the is upper 
 #return TRUE and false
-print(str2.islower())
+print(str2.islower())   
 print(str2.isupper())
 
 #isprintable
 #returns true if all the values within the given string is printable 
 #non printable values are {\n,\t}
-st1="wrhaha ahad ssjdsjf ajwsey "
-print(st1.isprintable())
+st1="\t"
+print("printable",st1.isprintable())
 
 #isspace
 #return true only and only if the string contains white spaces.
@@ -93,9 +93,9 @@ print(sw.isspace())
 
 
 #istitle method
-#RETURNS TRUE ONLY IF THE FIRST LETTER OF THE STRING IS CAPITALIZED ,else return false.
-dj="Ejsbf Uhhfb Jehhfb"
-print(dj.istitle())
+#RETURNS TRUE ONLY IF THE all FIRST LETTER OF THE STRING IS CAPITALIZED ,else return false.
+dj="Ki ka Ki"
+print("is title",dj.istitle())
 
 
 #islower method
